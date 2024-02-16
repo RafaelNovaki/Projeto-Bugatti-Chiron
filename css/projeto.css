@@ -1,0 +1,123 @@
+
+/* Geral */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Cabeçalho */
+
+/* video */
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio:16/9) {
+    .background-video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio:16/9) {
+    .background-video {
+        width: auto;
+        height: 100%;
+    }
+}
+/* fim video */
+
+
+/* texto */
+#tituloum {
+    font-size: 240px;
+    text-transform: uppercase;
+
+    /* animação */
+    background: linear-gradient(45deg, #fecc42, #ffbc03, #ffd970, #ffc116e6);
+    background-size: 400% 100%;
+    animation: degrade 10s linear infinite alternate;
+
+    /* animação no texto */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#tituloum {
+    font-size: 240px;
+    transition: 0.8s;
+}
+#tituloum:hover {
+    -webkit-text-stroke: 2.5px #fff0b6;
+    color: transparent;
+}
+
+@keyframes degrade {
+    0% {
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position: 400%;
+    }
+}
+
+#titulodois {
+    font-size: 240px;
+    text-transform: uppercase;
+
+    /* animação */
+    background: linear-gradient(45deg, #fff7dd, #fcf5c9, #fff0b6, #fdf8e7);
+    background-size: 400% 100%;
+    animation: degrade 10s linear infinite alternate;
+
+    /* animação no texto */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#titulodois {
+    font-size: 240px;
+    transition: 0.8s;
+}
+#titulodois:hover {
+    -webkit-text-stroke: 2px #f7df7f;
+    color: transparent;
+}
+
+@keyframes degrade {
+    0% {
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position: 400%;
+    }
+}
+/* fim texto */
+
+
+/* container do cabeçalho */
